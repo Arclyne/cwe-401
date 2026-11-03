@@ -12,9 +12,8 @@ int main(int argc, char **argv)
     for (count = 0; count < LOOPS; count++) 
     {
         pointer = (char *)malloc(sizeof(char) * MAXSIZE);
+        free(pointer);
     }
-
-    free(pointer);
 
     return count;
 }
